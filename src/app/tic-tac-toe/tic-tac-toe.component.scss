@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 210px;
+    background-color: rgb(113, 122, 122);
+}
+.table {
+    border-collapse: collapse;
+  }
+  
+ td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+  }
+  
+  td:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+.result{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 210px;
+    font-size: 26px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}

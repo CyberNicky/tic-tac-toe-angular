@@ -1,0 +1,14 @@
+<div class="container" *ngIf="!winner">
+    <table>
+      <tr *ngFor="let row of board; let i = index">
+        <td *ngFor="let cell of row; let j = index" (click)="mark(i, j)">
+          {{ cell }}
+        </td>
+      </tr>
+    </table>
+    <div>Próximo jogador: {{ player }}</div>
+  </div>
+  <div class="result" *ngIf="winner">
+    O vencedor foi: {{ winner }}
+    <button class="button" (click)="newGame()">Jogar novamente</button>
+  </div>
